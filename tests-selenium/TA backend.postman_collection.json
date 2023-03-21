@@ -1,0 +1,1717 @@
+{
+	"info": {
+		"_postman_id": "8081c092-f089-4068-a2db-67caa1fbe8f5",
+		"name": "TA backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"password125\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/register",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"password125\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/register",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:51:50 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5346318; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 508,\n    \"new\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"password125\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"password125\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:53:34 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5346166; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "508"
+				}
+			]
+		},
+		{
+			"name": "invalidLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"login\":\"hello\",\r\n\"password\":\"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "invalidLogin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"login\":\"hello\",\r\n\"password\":\"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:52:41 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5346218; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "-1"
+				}
+			]
+		},
+		{
+			"name": "invalidPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "invalidPassword",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"login\":\"hello128\",\r\n\"password\":\"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/user/login",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:55:44 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5346036; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "-1"
+				}
+			]
+		},
+		{
+			"name": "createTitle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"author\":\"J.K.Rowling\",\r\n\"title\":\"Harry Potter and The Order Of The Phoenix\",\r\n\"year\":2003\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"titles",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createTitle",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"author\":\"J.K.Rowling\",\r\n\"title\":\"Harry Potter and The Order Of The Phoenix\",\r\n\"year\":2003\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"titles",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:56:13 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5346008; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "509"
+				}
+			]
+		},
+		{
+			"name": "getTitles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/?userId=508",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getTitles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/?userId=508",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"titles",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:57:24 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345936; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 509,\n        \"author\": \"J.K.Rowling\",\n        \"title\": \"Harry Potter and The Order Of The Phoenix\",\n        \"year\": 2003\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "updateTitle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"id\":509,\r\n\"author\":\"J.K.Rowling\",\r\n\"title\":\"Harry Potter and The Order of The Phoenix\",\r\n\"year\":\"2003\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "488",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateTitle",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"id\":509,\r\n\"author\":\"J.K.Rowling\",\r\n\"title\":\"Harry Potter and The Order of The Phoenix\",\r\n\"year\":\"2003\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"titles",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:57:54 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345906; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 509,\n    \"author\": \"J.K.Rowling\",\n    \"title\": \"Harry Potter and The Order of The Phoenix\",\n    \"year\": 2003\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteTitle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/?userId=508&id=509",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						},
+						{
+							"key": "id",
+							"value": "509"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteTitle",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/titles/?userId=508&id=509",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"titles",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								},
+								{
+									"key": "id",
+									"value": "509"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 20:59:39 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345801; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "createItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"titleId\":510,\r\n\"purchaseDate\":\"2021-12-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"items",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createItem",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"titleId\":510,\r\n\"purchaseDate\":\"2021-12-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"items",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:00:16 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345765; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "511"
+				}
+			]
+		},
+		{
+			"name": "getItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/?userId=508&titleId=510",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						},
+						{
+							"key": "titleId",
+							"value": "510"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getItem",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/?userId=508&titleId=510",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"items",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								},
+								{
+									"key": "titleId",
+									"value": "510"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:01:10 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345710; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 511,\n        \"purchaseDate\": \"2021-12-12\",\n        \"status\": \"AVAILABLE\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "updateItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"id\":511,\r\n\"purchaseDate\":\"2021-12-06\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"items",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateItem",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"id\":511,\r\n\"purchaseDate\":\"2021-12-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"items",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:01:42 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345678; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 511,\n    \"purchaseDate\": \"2021-12-06\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/?userId=508&id=511",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						},
+						{
+							"key": "id",
+							"value": "511"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteItem",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/items/?userId=508&id=511",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"items",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								},
+								{
+									"key": "id",
+									"value": "511"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:02:07 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345654; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "createRent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"itemId\":512,\r\n\"customerName\":\"John New\",\r\n\"rentDate\":\"2021-12-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"rents",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createRent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"itemId\":512,\r\n\"customerName\":\"John New\",\r\n\"rentDate\":\"2021-12-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"rents",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:03:35 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345566; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "513"
+				}
+			]
+		},
+		{
+			"name": "getRents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/?userId=508&itemId=512",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"rents",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						},
+						{
+							"key": "itemId",
+							"value": "512"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getRents",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/?userId=508&itemId=512",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"rents",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								},
+								{
+									"key": "itemId",
+									"value": "512"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:03:58 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345543; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 513,\n        \"customerName\": \"John New\",\n        \"rentDate\": \"2021-12-10\",\n        \"expirationDate\": \"2021-12-17\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "updateRent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"userId\":508,\r\n\"id\":513,\r\n\"customerName\":\"John Newy\",\r\n\"rentDate\":\"2021-12-10\",\r\n\"expirationDate\":\"2021-12-24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"rents",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateRent",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userId\":508,\r\n\"id\":513,\r\n\"customerName\":\"John Newy\",\r\n\"rentDate\":\"2021-12-10\",\r\n\"expirationDate\":\"2021-12-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"rents",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:05:00 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345481; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 513,\n    \"customerName\": \"John Newy\",\n    \"rentDate\": \"2021-12-10\",\n    \"expirationDate\": \"2021-12-24\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteRent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/?userId=508&id=513",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental",
+						"kodillaadministrators",
+						"repl",
+						"co"
+					],
+					"path": [
+						"rents",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "508"
+						},
+						{
+							"key": "id",
+							"value": "513"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteRent",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ta-ebookrental.kodillaadministrators.repl.co/rents/?userId=508&id=513",
+							"protocol": "https",
+							"host": [
+								"ta-ebookrental",
+								"kodillaadministrators",
+								"repl",
+								"co"
+							],
+							"path": [
+								"rents",
+								""
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "508"
+								},
+								{
+									"key": "id",
+									"value": "513"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 21:05:39 GMT"
+						},
+						{
+							"key": "Expect-Ct",
+							"value": "max-age=2592000, report-uri=\"https://sentry.repl.it/api/10/security/?sentry_key=615192fd532445bfbbbe966cd7131791\""
+						},
+						{
+							"key": "Replit-Cluster",
+							"value": "teams"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5345441; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		}
+	]
+}
